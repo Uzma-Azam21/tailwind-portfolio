@@ -47,7 +47,7 @@ export default function About() {
           >
             <div className="bg-white/30 dark:bg-gray-800/40 backdrop-blur-md p-6 rounded-xl border border-white/20 dark:border-gray-700 shadow-xl">
               <p className="text-lg mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                I’m a <strong>Frontend Developer</strong> who enjoys building
+                I&rsquo;m a <strong>Frontend Developer</strong> who enjoys building
                 clean and user-friendly websites using <strong>HTML</strong>,{" "}
                 <strong>CSS</strong>, <strong>Tailwind</strong>,{" "}
                 <strong>JavaScript</strong>, <strong>TypeScript</strong>, and{" "}
@@ -56,8 +56,8 @@ export default function About() {
               </p>
 
               <p className="text-lg mb-4 text-gray-700 dark:text-gray-300 leading-relaxed">
-                I'm currently exploring the world of <strong>AI</strong> and how
-                it connects with web development. I’ve been learning{" "}
+                I&rsquo;m currently exploring the world of <strong>AI</strong> and how
+                it connects with web development. I&rsquo;ve been learning{" "}
                 <strong>Python</strong> and <strong>Agentic AI</strong> to build
                 smarter apps. I enjoy using tech to{" "}
                 <strong>solve real problems</strong>, like helping businesses
@@ -65,7 +65,7 @@ export default function About() {
               </p>
 
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                I'm always excited to <strong>learn new tools</strong>, try out
+                I&rsquo;m always excited to <strong>learn new tools</strong>, try out
                 new ideas, and grow as a developer who brings together
                 creativity and real-world solutions.
               </p>
