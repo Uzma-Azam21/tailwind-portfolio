@@ -6,22 +6,36 @@ import Image from "next/image";
 export default function Projects() {
   const projects = [
     {
-      title: "E-commerce Platform",
+      title: "E-commerce Furniture Website",
       description:
         "A full-featured online store built with Next.js and Stripe integration.",
-      image: "/ecommerce.png",
+      image: "/chair.jpg",
+      url: "https://ecommmerce-marketplace-comfort-crafty.vercel.app/",
     },
     {
-      title: "Task Management App",
-      description:
-        "A React-based application for managing tasks and projects with real-time updates.",
-      image: "/task.png",
+      title: "AI-Powered Web App",
+      description: "Modern AI tool built with Next.js + Tailwind CSS.",
+      image: "/ai.jpg",
+      url: "https://agentia-world-website-nextjs.vercel.app/",
     },
     {
-      title: "Portfolio Website",
+      title: "Online Book Shop",
+      description: "Online book selling platform with clean UI.",
+      image: "/book.jpg",
+      url: "https://ecommerce-bookshop.vercel.app/",
+    },
+    {
+      title: "Horror Blogs",
+      description: "A dark-themed blog platform for horror stories.",
+      image: "/horror.jpg",
+      url: "https://horror-blog-seven.vercel.app/",
+    },
+    {
+      title: "Figma Design",
       description:
-        "A responsive portfolio website showcasing my skills and projects.",
-      image: "/portfolio.png",
+        "Designed in Figma and meticulously translated to code using Next.js and Tailwind CSS for pixel-perfect results.",
+      image: "/figma.jpg",
+      url: "https://figma-design-two-gamma.vercel.app/",
     },
   ];
 
@@ -38,9 +52,12 @@ export default function Projects() {
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <motion.a
+              href={project.url}
               key={index}
-              className="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gray-100 dark:bg-gray-700 rounded-lg shadow-md overflow-hidden cursor-pointer block"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -62,7 +79,7 @@ export default function Projects() {
                   {project.description}
                 </p>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
